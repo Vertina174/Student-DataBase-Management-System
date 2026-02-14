@@ -37,17 +37,13 @@ C++ Compiler (g++)
 
 Windows / Linux / macOS
 
-MSYS2 MinGW64 (Recommended for Windows)
-
 Recommended terminal (Windows):
-
-MSYS2 MinGW64
 
 ▶️ How to Compile
 
 Run the following command inside the project directory:
 
-g++ main.cpp -o student_db.exe
+g++ Student_manager.cpp -o student_db.exe
 
 ▶️ How to Run
 
@@ -58,17 +54,17 @@ After successful compilation:
 
 The program will display a menu with options to:
 
-Add a student
+1. Add a student
 
-View all students
+2. View all students
 
-Search a student
+3. Search a student
 
-Update a student
+4. Update a student
 
-Delete a student
+5. Delete a student
 
-Clear the database
+6. Clear the database
 
 🗂 Data Storage Format
 
@@ -78,9 +74,9 @@ Field	Size
 Name	10 bytes
 Space	1 byte
 Age	2 bytes
-Newline	1 byte
+Newline: 2 bytes for windows(/r/n), 1 bytes for linux & mac os(/n)
 
-Total size per record: 15 bytes
+Total size per record/Line: 15 bytes or 14 bytes
 
 This structure allows direct modification of specific records using file pointer repositioning.
 
